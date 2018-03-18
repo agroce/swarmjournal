@@ -1,0 +1,66 @@
+%% -*- mode: LaTeX -*-
+%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Conclusion}
+
+Swarm testing relies on the following claim: for realistic systems,
+\emph{randomly excluding some features from some tests} can improve
+coverage and fault detection, compared to a test suite that
+potentially uses every feature in every test.
+%
+The benefit of using of a single, inclusive, default
+configuration---that every test can potentially expose any fault and
+cover any behavior, heretofore usually taken for granted in random
+testing---does not, in practice, make up for the fact that \emph{some
+features can, statistically, suppress behaviors.}  Effective testing
+therefore may require feature omission diversity.
+%
+We show that this not only holds for simple container-class examples
+(e.g., pop operations suppress stack overflow) but for a widely used
+flash file system and 14 out of 17 versions of five production-quality C
+compilers.
+%
+For these real-world systems, if we compare testing with a single
+inclusive configuration to testing with a set of 100--1,000
+unique configurations, each omitting features with 50\% probability
+per feature, we have observed (1)~significantly better fault
+detection, (2)~significantly better branch and statement coverage, and
+(3)~strictly superior mutant detection.  
+%
+Test configuration diversity does indeed produce better testing in
+many realistic situations.
+
+
+Swarm testing was inspired by swarm verification, and we hope that its
+ideas can be ported back to model checking.
+%
+We also plan to investigate swarm in the context of bounded exhaustive
+testing and learning-based testing methods.
+%
+Finally, we believe there is room to better understand \emph{why}
+swarm provides its benefits, particularly in the context
+of large, idiosyncratic SUTs such as compilers, virtual machines, and
+OS kernels.
+%
+More case studies will be needed to generate data to support this
+work.  We also plan to investigate how swarm testing's increased
+diversity of code coverage in test cases can benefit fault
+localization and program understanding algorithms
+relying on test cases~\cite{Tarantula}; traditional random tests are far more
+homogeneous than swarm tests.
+
+
+We have made Python scripts supporting swarm testing available at
+\url{http://beaversource.oregonstate.edu/projects/cswarm/browser/release}.
+%
+%% ENE: cut for space.
+%
+% The {\tt genconfigs} tool supports Gaussian distributions of numeric
+% parameters and feature dependencies as well as the binary
+% inclusion/omissions used in this paper.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% End of file.

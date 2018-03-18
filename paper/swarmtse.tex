@@ -1,0 +1,40 @@
+\documentclass[10pt,journal,cspaper,compsoc]{IEEEtran}
+
+\usepackage{graphicx}
+\usepackage[tight,footnotesize]{subfigure}
+\usepackage{hyperref}
+
+\title{Swarm: A Lightweight yet Highly Effective Method for Improving Random Testing}
+
+\author{Alex~Groce,~\IEEEmembership{Member,~IEEE,}
+        Chaoqiang~Zhang,
+        Yang Chen,
+        Eric Eide,
+        Mohammad Amin Alipour,
+        and~John~Regehr~\IEEEmembership{Member,~IEEE,},
+\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem A. Groce, C. Zhang, and M. Alipour are with the School of
+of Electrical Engineering and Computer Science, Oregon State University, Corvallis, OR, 97331.\protect\\
+% note need leading \protect in front of \\ to get a newline within \thanks as
+% \\ is fragile and will error, could use \hfil\break instead.
+\IEEEcompsocthanksitem Y. Chen, E. Eide, and J. Regehr are with the School of Computing, University of Utah, Salt Lake City, 84112.}% <-this % stops a space
+\thanks{}}
+
+\begin{document}
+
+\maketitle
+
+\input{abstract}
+
+\input{intro}
+
+\input{spidermonkey}
+
+\input{yaffs2}
+
+\input{conclusion}
+
+\bibliographystyle{IEEEtran}
+
+\bibliography{bibliography}
+
+\end{document}

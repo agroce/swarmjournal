@@ -1,0 +1,44 @@
+1.6 BR:
+  p-value = 6.359e-06
+  95%-conf diff = [25.27749-61.31850]
+  means: swarm = 13879.51, non-swarm = 13836.21
+1.6 ST:
+  p-value = 5.615e-09
+  95%-conf diff = [44.63542-85.02228]
+  means: swarm = 18578.97, non-swarm = 18514.15
+1.6 FAIL:
+  p-value = 4.816e-14
+  95%-conf diff = [13.49217-21.14760]
+  means: swarm = 114.92405, non-swarm = 97.60417
+1.6 FAULT:
+  p-value = 1.837e-14
+  95%-conf diff = [2.365149-3.676517]
+  means: swarm = 11.666667, non-swarm = 8.645833
+1.7 BR:
+  p-value = 3.92e-07
+  95%-conf diff = [25.28064-54.64710]
+  means: swarm = 17470.44, non-swarm = 17430.48
+1.7 ST:
+  p-value = 0.001753
+  95%-conf diff = [11.25925-47.76132]
+  means: swarm = 21975.82, non-swarm = 21946.31
+1.7 FAIL:
+  p-value < 2.2e-16
+  95%-conf diff = [15.44811-19.11729]
+  means: swarm = 45.94937, non-swarm = 28.66667
+1.7 FAULT:
+  p-value < 2.2e-16
+  95%-conf diff = [2.647469-3.810864]
+  means: swarm = 9.645833, non-swarm = 6.416667
+1.8.5 BR:
+  p-value = 2.073e-09
+  95%-conf diff = [36.58633-68.50966]
+  means: swarm = 15580.51, non-swarm = 15527.96
+1.8.5 ST:
+  p-value = 8.674e-14
+  95%-conf diff = [55.57573-89.24864]
+  means: swarm = 20851.97, non-swarm = 20779.56
+1.8.5 FAIL:
+  p-value = 0.0003977
+  95%-conf diff = [0.4343509-1.4680753]
+  means: swarm = 2.430380, non-swarm = 1.479167

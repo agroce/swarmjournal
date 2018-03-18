@@ -1,0 +1,13 @@
+sout = open("swarm.data",'w')
+m = 0
+for l in open("swarm.cov.71"):
+    m += 10
+    sout.write(str(m) + " " + l)
+
+
+sout = open("noswarm.data",'w')
+m = 0
+for l in open("swarm.cov.71"):
+    m += 10
+    sout.write(str(m) + " " + l)
+        

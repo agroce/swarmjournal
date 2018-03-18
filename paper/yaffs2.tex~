@@ -1,0 +1,15 @@
+\section{YAFFS2 Results}
+
+\begin{table}
+\caption{95\% effect sizes (absolute) for swarm over default, YAFFS2}
+
+\begin{tabular}{c||c|c|c|c}
+\hline
+ST & BR & Failures & Faults \\
+\hline
+\hline
+15.7 - 50.1 & 10.5 - 28.1 \\
+\hline
+\end{tabular}
+\label{tab:effect}
+\end{table}

@@ -1,0 +1,5 @@
+files for statement/branch coverage for 12*6 10 minutes interval
+swarm.cov.<num> num 10 minutes run data
+first,second,and third columns: statement,branch,#tests generated
+
+swarm.cov.10m.<num> coverage for each 10 min interval

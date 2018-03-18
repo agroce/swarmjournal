@@ -1,0 +1,5 @@
+swarmtse.pdf: *.tex
+	pdflatex swarmtse.tex
+	bibtex swarmtse
+	pdflatex swarmtse.tex
+	pdflatex swarmtse.tex
